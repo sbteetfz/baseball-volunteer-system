@@ -1,10 +1,8 @@
-/** @type {import('postcss').Config} */
+const path = require('path')
+
 module.exports = {
-    plugins: {
-      'tailwindcss': {},
-      'autoprefixer': {},
-      'postcss-preset-env': {
-        features: { 'custom-properties': false }
-      },
-    },
-  }
+  plugins: [
+    'tailwindcss',
+    'autoprefixer',
+  ],
+}
